@@ -28,10 +28,15 @@ checkPrime()
 int main()
 {
    prime num1;
+    char ans;
+    do{
     if (num1.checkPrime())
       cout << "This is a prime number";
   else
       cout << "This is not a prime number";
+      cout<<"Want to continue(y/n)?";
+        cin>>ans;
+  }while(ans=='y');
 
 
     return 0;
